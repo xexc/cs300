@@ -1,0 +1,35 @@
+Example Runtime Analysis
+When you are ready to begin analyzing the runtime for the data structures that you have created pseudocode for, use the chart below to support your work. This example is for printing course information when using the vector data structure. As a reminder, this is the same pairing that was bolded in the pseudocode from the first part of this document.
+
+
+Vector:
+Code	Line Cost	# Times Executes	Total Cost
+for all courses	1	n	n
+     if the course is the same as courseNumber	1	n	n
+         print out the course information	2	1	1
+         for each prerequisite of the course	1	n	n
+           print the prerequisite course information	2	n	n
+Total Cost	6n + 1
+Runtime	1(n)
+	
+
+Hash Table
+
+Code	Line Cost	# Times Executes	Total Cost
+for all courses	2	n	n
+     if the course is the same as courseNumber	1	n	n
+         print out the course information	2	1	1
+         for each prerequisite of the course	2	n	n
+           print the prerequisite course information	4	n	n
+Total Cost	9n + 1
+Runtime	O(n)
+Tree
+
+Code	Line Cost	# Times Executes	Total Cost
+for all courses	1	n	n
+     if the course is the same as courseNumber	1	n	n
+         print out the course information	2	1	1
+         for each prerequisite of the course	1	n	n
+           print the prerequisite course information	4	n	n
+Total Cost	8n + 1
+Runtime	O(n)
